@@ -55,9 +55,53 @@
             background: rgba(30, 41, 59, 0.9);
         }
 
-        /* Logic Ukuran Kartu */
-        .item-large { grid-column: span 2; grid-row: span 2; } /* 2x2 */
-        .item-wide { grid-column: span 2; } /* 2x1 */
+        /* --- ANIMASI IKON INTERAKTIF --- */
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s ease;
+            animation: floating 3s ease-in-out infinite; /* Efek mengapung */
+            box-shadow: inset 0 0 10px rgba(255,255,255,0.02);
+        }
+
+        .bento-item:hover .icon-box {
+            transform: rotateY(180deg) scale(1.1); /* Berputar saat hover */
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+            border-color: rgba(255, 255, 255, 0.5);
+            animation: none; /* Berhenti mengapung saat di-hover agar stabil */
+        }
+
+        /* Ikon spesifik pada featured card */
+        .featured-bg .icon-box {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .featured-bg:hover .icon-box {
+            background: white;
+            color: var(--primary);
+            transform: rotate(15deg) scale(1.2);
+        }
+        /* --- END ANIMASI IKON --- */
+
+        .item-large { grid-column: span 2; grid-row: span 2; }
+        .item-wide { grid-column: span 2; }
 
         .btn-action {
             background: rgba(255, 255, 255, 0.05);
@@ -80,18 +124,6 @@
         .bento-item:hover .btn-action {
             background: white;
             color: var(--bg);
-        }
-
-        .icon-box {
-            width: 56px;
-            height: 56px;
-            border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.05);
         }
 
         .featured-bg { background-color: #4f46e5; }
