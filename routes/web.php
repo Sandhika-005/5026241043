@@ -2,11 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\PengawaiController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+//pertemuan 7
 Route::get('/halo', function () {
 	return "<h1>Halo, Selamat datang</h1> di tutorial laravel <b>www.malasngoding.com</b>";
 });
@@ -20,11 +23,18 @@ Route::get('/DELL', function () {
 });
 
 Route::get('/dosen', [DosenController::class, 'index']);
-
 Route::get('/biodata', [DosenController::class, 'biodata']);
 
+//pertemuan 9
+Route::get('/pengawai/{nama}', [PengawaiController::class, 'index']);
+Route::get('/formulir', [PengawaiController::class, 'formulir']);
+Route::post('/formulir/proses', [PengawaiController::class, 'proses']);
+//route blog
+Route::get('/blog', [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
-
+//tugas pertemuan 7
 Route::get('/tugas', function () {
     return view('tugas.menu', [
         'nama' => 'Muhammad Sandhika Setiawan'
