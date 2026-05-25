@@ -82,6 +82,14 @@ Route::get('/tugas/pertemuan-2.1', function () {
     return view('tugas.news-1');
 });
 
-
+//  ROUTE CRUD
 // Pertemuan 11
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
+
+// Pertemuan 13
+Route::get('/pegawai/tambah', [PegawaiDBController::class, 'tambah']);
+Route::post('/pegawai/store', [PegawaiDBController::class, 'store']);
+Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
+Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
+Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
+Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
