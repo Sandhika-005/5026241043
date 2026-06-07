@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\BukuController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -93,3 +94,17 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+Route::get('/tugas-laravel', function () {
+    return view('template');
+});
+
+
+// Tugas Pra EAS PENGWEB
+Route::get('/buku', [BukuController::class, 'index']);
+Route::get('/buku/cari', [BukuController::class, 'cari']);
+Route::get('/buku/tambah', [BukuController::class, 'tambah']);
+Route::post('/buku/store', [BukuController::class, 'store']);
+Route::get('/buku/edit/{id}', [BukuController::class, 'edit']);
+Route::post('/buku/update', [BukuController::class, 'update']);
+Route::get('/buku/hapus/{id}', [BukuController::class, 'hapus']);

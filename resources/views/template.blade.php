@@ -24,16 +24,16 @@
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Buku</a>
+                        <a class="nav-link active" href="/buku">Buku</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 2</a>
+                        <a class="nav-link active" href="#">PR 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 3</a>
+                        <a class="nav-link active" href="#">PR 3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EAS</a>
+                        <a class="nav-link active" href="#">EAS</a>
                     </li>
                 </ul>
             </div>
