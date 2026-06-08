@@ -31,6 +31,8 @@
                     <td>Rp {{ number_format($item->Harga, 0, ',', '.') }}</td>
                     <td class="fw-bold text-success">Rp {{ number_format($item->Jumlah * $item->Harga, 0, ',', '.') }}</td>
                     <td class="text-center">
+                        <a href="{{ route('belanja.beli') }}" class="btn btn-success btn-sm fw-bold">Beli</a>
+
                         <a href="{{ route('belanja.batal', $item->ID) }}" class="btn btn-danger btn-sm px-3"
                             onclick="return confirm('Apakah Anda yakin ingin membatalkan transaksi pembelian ini?')">Batal</a>
                     </td>
