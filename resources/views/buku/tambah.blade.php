@@ -13,12 +13,14 @@
                         <input type="text" name="merkbuku" class="form-control" placeholder="Contoh: Notebook Sidu" required="required">
                     </div>
                 </div>
+                <br />
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Stock Buku</label>
                     <div class="col-sm-10">
                         <input type="number" name="stockbuku" class="form-control" placeholder="Contoh: 75" required="required">
                     </div>
                 </div>
+                <br />
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Ketersediaan</label>
                     <div class="col-sm-10 d-flex align-items-center">
@@ -40,6 +42,7 @@
                         </div>
                     </div>
                 </div>
+                <br />
                 <div class="form-group row">
                     <div class="col-sm-10 offset-sm-2">
                         <input type="submit" class="btn btn-primary" value="Simpan Data">

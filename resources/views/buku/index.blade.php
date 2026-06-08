@@ -8,6 +8,7 @@
             <form action="/buku/cari" method="GET" class="form-inline">
                 <label class="mr-2">Cari Data Buku :</label>
                 <input class="form-control col-md-9 mr-2" type="text" name="cari" placeholder="Masukkan merk buku .." value="{{ old('cari') }}">
+                <br />
                 <input class="btn btn-success" type="submit" value="CARI">
             </form>
         </div>

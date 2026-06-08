@@ -16,12 +16,14 @@
                         <input type="text" name="merkbuku" class="form-control" required="required" value="{{ $b->merkbuku }}">
                     </div>
                 </div>
+                <br />
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Stock Buku</label>
                     <div class="col-sm-10">
                         <input type="number" name="stockbuku" class="form-control" required="required" value="{{ $b->stockbuku }}">
                     </div>
                 </div>
+                <br />
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Ketersediaan</label>
                     <div class="col-sm-10 d-flex align-items-center">
@@ -50,6 +52,7 @@
                         </div>
                     </div>
                 </div>
+                <br />
                 <div class="form-group row">
                     <div class="col-sm-10 offset-sm-2">
                         <input type="submit" class="btn btn-warning" value="Simpan Perubahan">
