@@ -23,11 +23,11 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/buku">Buku</a>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="/siswa">Siswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">PR 2</a>
+                        <a class="nav-link active" href="/buku">Buku</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">PR 3</a>
