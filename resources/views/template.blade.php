@@ -27,10 +27,13 @@
                         <a class="nav-link active" href="/siswa">Siswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/buku">Buku</a>
+                        <a class="nav-link active" href="/buku">PR 1 - Buku</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">PR 3</a>
+                        <a class="nav-link active" href="/belanja">PR 2 - Belanja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">PR 3 - Nilai</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">EAS</a>

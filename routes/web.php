@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\BelanjaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -118,3 +119,9 @@ Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+// Latihan EAS
+Route::get('/belanja', [BelanjaController::class, 'index'])->name('belanja.index');
+Route::get('/belanja/beli', [BelanjaController::class, 'beli'])->name('belanja.beli');
+Route::post('/belanja/simpan', [BelanjaController::class, 'simpan'])->name('belanja.simpan');
+Route::get('/belanja/batal/{id}', [BelanjaController::class, 'batal'])->name('belanja.batal');
