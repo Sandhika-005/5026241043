@@ -47,6 +47,7 @@
                 </td>
                 <td>
                     <a href="/buku/edit/{{ $b->kodebuku }}" class="btn btn-warning btn-sm">Edit</a>
+                    &ensp;
                     <a href="/buku/hapus/{{ $b->kodebuku }}" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus buku ini?')">Hapus</a>
                 </td>
             </tr>
@@ -54,7 +55,6 @@
         </tbody>
     </table>
 
-    <div class="d-flex justify-content-center">
-        {{ $buku->links() }}
-    </div>
+    {{ $buku->links() }}
+
 @endsection
