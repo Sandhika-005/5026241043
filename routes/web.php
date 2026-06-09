@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\BelanjaController;
+use App\Http\Controllers\NilaiController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -120,8 +121,13 @@ Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.e
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
 
-// Latihan EAS
+// Latihan EAS (D4)
 Route::get('/belanja', [BelanjaController::class, 'index'])->name('belanja.index');
 Route::get('/belanja/beli', [BelanjaController::class, 'beli'])->name('belanja.beli');
 Route::post('/belanja/simpan', [BelanjaController::class, 'simpan'])->name('belanja.simpan');
 Route::get('/belanja/batal/{id}', [BelanjaController::class, 'batal'])->name('belanja.batal');
+
+// Latihan EAS (E5)
+Route::get('/nilai', [NilaiController::class, 'index'])->name('nilai.index');
+Route::get('/nilai/tambah', [NilaiController::class, 'tambah'])->name('nilai.tambah');
+Route::post('/nilai/simpan', [NilaiController::class, 'simpan'])->name('nilai.simpan');

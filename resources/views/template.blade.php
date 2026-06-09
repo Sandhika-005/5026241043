@@ -33,7 +33,7 @@
                         <a class="nav-link active" href="/belanja">PR 2 - Belanja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">PR 3 - Nilai</a>
+                        <a class="nav-link active" href="/nilai">PR 3 - Nilai</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">EAS</a>

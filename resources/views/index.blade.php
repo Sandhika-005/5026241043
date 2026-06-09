@@ -15,19 +15,19 @@
 
     <table class="table table-striped table-hover">
         <tr>
-            <th>Nama</th>
-            <th>Jabatan</th>
-            <th>Umur</th>
-            <th>Alamat</th>
-            <th>Opsi</th>
+            <th style="text-align: center;">Nama</th>
+            <th style="text-align: center;">Jabatan</th>
+            <th style="text-align: center;">Umur</th>
+            <th style="text-align: center;">Alamat</th>
+            <th style="text-align: center;">Opsi</th>
         </tr>
         @foreach ($pegawai as $p)
             <tr>
                 <td>{{ $p->pegawai_nama }}</td>
-                <td>{{ $p->pegawai_jabatan }}</td>
-                <td>{{ $p->pegawai_umur }}</td>
+                <td style="text-align: center;">{{ $p->pegawai_jabatan }}</td>
+                <td style="text-align: center;">{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
-                <td>
+                <td style="text-align: center;">
                     <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
                     &ensp;
                     <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>

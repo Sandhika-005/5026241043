@@ -17,19 +17,19 @@
     <table class="table table-striped table-hover table-bordered">
         <thead class="thead-dark">
             <tr>
-                <th>Kode Buku</th>
-                <th>Merk Buku</th>
-                <th>Stock Buku</th>
+                <th style="text-align: center;">Kode Buku</th>
+                <th style="text-align: center;">Merk Buku</th>
+                <th style="text-align: center;">Stock Buku</th>
                 <th class="text-center" style="width: 15%;">Tersedia</th>
-                <th>Opsi</th>
+                <th style="text-align: center;">Opsi</th>
             </tr>
         </thead>
         <tbody>
             @foreach($buku as $b)
             <tr>
-                <td>{{ $b->kodebuku }}</td>
+                <td style="text-align: center;">{{ $b->kodebuku }}</td>
                 <td>{{ $b->merkbuku }}</td>
-                <td>{{ $b->stockbuku }}</td>
+                <td style="text-align: center;">{{ $b->stockbuku }}</td>
                 <td class="text-center">
                     <div class="form-check form-switch d-inline-block position-relative p-0" style="width: 75px; height: 30px;">
                         @if($b->tersedia == 'Y')
@@ -45,7 +45,7 @@
                         @endif
                     </div>
                 </td>
-                <td>
+                <td style="text-align: center;">
                     <a href="/buku/edit/{{ $b->kodebuku }}" class="btn btn-warning btn-sm">Edit</a>
                     &ensp;
                     <a href="/buku/hapus/{{ $b->kodebuku }}" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus buku ini?')">Hapus</a>
