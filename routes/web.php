@@ -112,7 +112,6 @@ Route::get('/buku/edit/{id}', [BukuController::class, 'edit']);
 Route::post('/buku/update', [BukuController::class, 'update']);
 Route::get('/buku/hapus/{id}', [BukuController::class, 'hapus']);
 
-
 //route CRUD siswa
 Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa.index');
 Route::get('/siswa/create', [SiswaController::class, 'create'])->name('siswa.create');
